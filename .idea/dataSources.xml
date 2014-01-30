@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1950907728">
+  <component name="DataSourceManagerImpl" format="xml" hash="2573418150">
     <data-source source="LOCAL" name="Rails MyBlog: development" uuid="60c58d41-33cd-461e-be6d-15f0811e0403">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Sites\MyBlog\db\development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:jgarrettblog_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails MyBlog: test" uuid="35636494-676c-4988-827f-b939778e75f3">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5433/jgarrettblog_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails MyBlog: production" uuid="a529cb6a-c6d1-4f84-aff9-8019b8504889">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:jgarrettblog_production</jdbc-url>
       <libraries />
     </data-source>
   </component>
