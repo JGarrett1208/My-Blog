@@ -1,16 +1,16 @@
 development:
-  adapter: sqlite3
+  adapter: postgresql
   database: jgarrettblog_development
   pool: 5
   timeout: 5000
 test:
-  adapter: sqlite3
+  adapter: postgresql
   database: jgarrettblog_test
   pool: 5
   timeout: 5000
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
   database: jgarrettblog_production
   pool: 5
   timeout: 5000

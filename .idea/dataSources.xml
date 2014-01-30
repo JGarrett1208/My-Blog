@@ -10,7 +10,7 @@
     <data-source source="LOCAL" name="Rails MyBlog: test" uuid="35636494-676c-4988-827f-b939778e75f3">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5433/jgarrettblog_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql:jgarrettblog_test</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails MyBlog: production" uuid="a529cb6a-c6d1-4f84-aff9-8019b8504889">
