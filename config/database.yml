@@ -1,18 +1,16 @@
 development:
-  adapter: postgresql
+  adapter: sqlite3
   database: jgarrettblog_development
   pool: 5
   timeout: 5000
 test:
-  adapter: postgresql
+  adapter: sqlite3
   database: jgarrettblog_test
   pool: 5
   timeout: 5000
-  host: localhost
-  port: 5433
 
 production:
-  adapter: postgresql
+  adapter: sqlite3
   database: jgarrettblog_production
   pool: 5
   timeout: 5000
