@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @post.title %></h1>
+<p><%= @post.body %></p>
+<small><%= @post.created_at %></small>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @post.score %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %> |
+<%# link_to 'Like', like_post_path %>
+<%= link_to 'Like', {:action => 'like', :id  => @post.id} %>
+
+<div class='spread'>
+  <div class='twshare left'>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="testblog">Tweet</a>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  </div>
+  <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+  <fb:like href="" layout="button_count" show_faces="false" width="450" font=""></fb:like>
+</div>
+
+<h2>Comments</h2>
+<% @post.comments.each do |comment| %>
+    <p>
+      <strong><%= comment.commenter %>: </strong> <%= comment.body %> <%= link_to 'Delete', [comment.post, comment],
+                                                                                  method: :delete,
+                                                                                  data: { confirm: 'Are you sure?' } %>
+    </p>
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+    <p>
+      <%# f.label :commenter %>
+      Your name:<br />
+      <%= f.text_field :commenter %>
+    </p>
+    <p>
+      <%# f.label :body %>
+      Comment text:<br />
+      <%= f.text_area :body %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
