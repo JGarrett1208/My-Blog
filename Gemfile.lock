@@ -106,9 +106,11 @@ GEM
     will_paginate (3.0.5)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.0.1)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails

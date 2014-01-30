@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 1.2'
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
 
+gem 'bcrypt-ruby', '~> 3.0.1', :platform => 'ruby'
+
 
 
 group :doc do
